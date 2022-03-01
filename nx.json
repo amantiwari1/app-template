@@ -1,10 +1,7 @@
 {
-  "npmScope": "app",
+  "npmScope": "ionic-app",
   "affected": {
     "defaultBase": "master"
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/react-native"
   },
   "implicitDependencies": {
     "package.json": {
@@ -29,5 +26,12 @@
       }
     ]
   },
-  "defaultProject": "app"
+  "defaultProject": "ionic-app",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    }
+  }
 }
